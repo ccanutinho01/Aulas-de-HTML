@@ -19,5 +19,53 @@
         </nav>
         </div>    
     </div>
+    <div id="area">
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+                <form action="/processa.php" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+<br>
+                    <label for="cpf">CPF</label>
+                    <input type="number" id="cpf" name="cpf" required>
+<br>    
+                    <label for="rg">RG</label>
+                    <input type="number" id="rg" name="rg" required>
+<br>
+        
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento">
+<br>
+  
+                    <label for="gender">Gênero:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Masculino</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Feminino</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Outro</label><br>
+<br>
+                    <label for="Estado civil"> Estado civil</label>
+                    <input type="opçoes-estado-civil" id="estado-civil" name="estado-civil">
+                    <datalist id="opçoes-estado-civil">
+                        <option value="Solteiro(a)"></option>
+                        <option value="Casado(a)"></option>
+                        <option value="Divociado(a)"></option>
+                        <option value="Viúvo(a)"></option>
+                        <option value="União Estável"></option>
+                        <option value="Outro"></option>
+                    </datalist>
+<br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+<br>
+                    <button type="submit">Enviar</button>
+                    <button class="dropbtn"><a href="index.html">Voltar</a></button>
+                </form>
+        </fieldset>
+    </div>
+    </div>
+
 </body>
 </html>
